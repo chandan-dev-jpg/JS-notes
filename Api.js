@@ -64,7 +64,7 @@
 //  let response=await fetch(ap
 
 //  let todos=await response.json();
- 
+
 //  let comp=todos.filter(todo=>todo.completed===true);
 
 //  console.log(comp);
@@ -72,4 +72,60 @@
 
 // getUser(apiUrl);
 
+// async It allows a task to run in the background without stopping the rest of the program.
+// await is used to wait for a Promise to finish before moving to the next line.
+
 //? 6
+// let apiUrl="https://jsonplaceholder.typicode.com/todos";
+
+// async function getUser(api)
+// {
+// let response=await fetch(api);
+// let todos=await response.json();
+
+// let com=todos.filter(todo=>todo.completed===false);
+// console.log(com);
+// }
+// getUser(apiUrl);
+
+
+//?7
+// let apiUrl = "https://jsonplaceholder.typicode.com/comments";
+
+// async function getUser(api) {
+//     let response = await fetch(api);
+//     let comments=await response.json();
+    
+//     let posts=comments.filter(comment=>comment.postId===3);
+//     console.log(posts);
+
+// }
+
+// getUser(apiUrl);
+
+//? 8
+// let apiUrl="https://jsonplaceholder.typicode.com/comments";
+
+// async function getUser(api) {
+//     let response=await fetch(api);
+//     let comments=await response.json();
+    
+//     let emails=comments.filter(comment=>comment.email.endsWith(".biz"));
+//     console.log(emails)
+// }
+// getUser(apiUrl);
+
+//?9
+
+let apiUrl="https://jsonplaceholder.typicode.com/albums";
+
+async function getUser(api) {
+    let response=await fetch(api);
+    let albums=await response.json();
+
+    let users=albums.filter(album=>album.userId===2);
+    console.log(users);
+
+}
+
+getUser(apiUrl);
