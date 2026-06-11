@@ -58,15 +58,18 @@
 
 //? 5
 
-let apiUrl="https://jsonplaceholder.typicode.com/todos";
+// let apiUrl="https://jsonplaceholder.typicode.com/todos";
 
-async function getUser(api) {
- let response=await fetch(api);
- let todos=await response.json();
+// async function getUser(api) {
+//  let response=await fetch(ap
+
+//  let todos=await response.json();
  
- let comp=todos.filter(todo=>todo.completed===true);
+//  let comp=todos.filter(todo=>todo.completed===true);
 
- console.log(comp);
-}
+//  console.log(comp);
+// }
 
-getUser(apiUrl);
+// getUser(apiUrl);
+
+//? 6
