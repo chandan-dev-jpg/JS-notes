@@ -1,19 +1,19 @@
-let promise=new Promise((resolve,reject)=>
-{
-let success=false;
-if(success)
-{
-resolve("Task completed");
-}else{
-reject("Task failed");
-}
-});
-promise
-.then((result)=>
-{
-    console.log(result);
-})
-.catch((error)=>
-{
-console.log(error)
-});
+// let promise=new promise((resolve,reject)=>
+// {
+// let success=true;
+
+// if(success)
+// {
+// resolve("Task Completed");
+// }else{
+//     reject("Task failed");
+// }
+// });
+
+// promise
+// .then((result) => {
+//     console.log(result)
+// })
+// .catch((error) => {
+//     console.log(error);
+// });
