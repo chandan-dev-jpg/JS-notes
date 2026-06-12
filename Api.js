@@ -117,15 +117,30 @@
 
 //?9
 
-let apiUrl="https://jsonplaceholder.typicode.com/albums";
+// let apiUrl="https://jsonplaceholder.typicode.com/albums";
 
-async function getUser(api) {
-    let response=await fetch(api);
-    let albums=await response.json();
+// async function getUser(api) {
+//     let response=await fetch(api);
+//     let albums=await response.json();
 
-    let users=albums.filter(album=>album.userId===2);
-    console.log(users);
+//     let users=albums.filter(album=>album.userId===2);
+//     console.log(users);
 
-}
+// }
 
-getUser(apiUrl);
+// getUser(apiUrl);
+
+//?10 
+
+// let apiUrl="https://jsonplaceholder.typicode.com/photos";
+
+// async function getUser(api) {
+
+//     let response=await fetch(api);
+//     let photos=await response.json();
+    
+//     let Photo=photos.slice(0,5);
+
+//     console.log(Photo);
+// }
+// getUser(apiUrl);
