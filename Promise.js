@@ -105,14 +105,40 @@
 // Rejects with "String Too Short" otherwise.
 
 
+// let promise=new Promise((resolve,reject)=>
+// {
+// let str=prompt("Enter name");
+// if(str.length>=5)
+// {
+// resolve("Valid String");
+// }else{
+//     reject("String Too Short");
+// }
+// });
+
+// promise.then((result)=>
+// {
+//     console.log(result)
+// }).catch((Error)=>
+// {
+// console.log(Error);
+// });
+
+
+//?6
+// Create a Promise that:
+// Resolves with "Leap Year" if the year is a leap year.
+// Rejects with "Not a Leap Year" otherwise.
 let promise=new Promise((resolve,reject)=>
 {
-let str=prompt("Enter name");
-if(str.length>=5)
+    let year=prompt("Enter year");
+if(year%4==0)
 {
-resolve("Valid String");
-}else{
-    reject("String Too Short");
+resolve("Leap Year");
+}
+else{
+    reject("not a leap year");
+
 }
 });
 
@@ -123,3 +149,16 @@ promise.then((result)=>
 {
 console.log(Error);
 });
+
+// ?7
+// Create a Promise that:
+// Resolves with "Username Valid" if username is not empty.
+// Rejects with "Username Required" otherwise.
+
+
+
+//?8
+// Create a Promise that:
+// Resolves with "Array Has Elements" if array is not empty.
+// Rejects with "Array is Empty" otherwise.
+
