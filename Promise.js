@@ -129,33 +129,50 @@
 // Create a Promise that:
 // Resolves with "Leap Year" if the year is a leap year.
 // Rejects with "Not a Leap Year" otherwise.
-let promise=new Promise((resolve,reject)=>
-{
-    let year=prompt("Enter year");
-if(year%4==0)
-{
-resolve("Leap Year");
-}
-else{
-    reject("not a leap year");
+// let promise=new Promise((resolve,reject)=>
+// {
+//     let year=prompt("Enter year");
+// if(year%4==0)
+// {
+// resolve("Leap Year");
+// }
+// else{
+//     reject("not a leap year");
 
-}
-});
+// }
+// });
 
-promise.then((result)=>
-{
-    console.log(result)
-}).catch((Error)=>
-{
-console.log(Error);
-});
+// promise.then((result)=>
+// {
+//     console.log(result)
+// }).catch((Error)=>
+// {
+// console.log(Error);
+// });
 
 // ?7
 // Create a Promise that:
 // Resolves with "Username Valid" if username is not empty.
 // Rejects with "Username Required" otherwise.
 
+let str=prompt("Enter Name");
+let promise=new Promise((resolve,reject)=>
+{
+    if(str!==' ')
+    {
+resolve("Username Valid");
+    }else{
+        reject("Username Required");
+    }
 
+});
+
+promise.then((result)=>{
+console.log(result)
+}).catch((Error)=>
+{
+console.log(Error)
+});
 
 //?8
 // Create a Promise that:

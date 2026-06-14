@@ -144,3 +144,17 @@
 //     console.log(Photo);
 // }
 // getUser(apiUrl);
+
+
+//?11
+let apiUrl="https://jsonplaceholder.typicode.com/posts";
+
+async function getUser(api)
+{
+    let response=await fetch(api);
+    let posts=await response.json();
+
+    let post=posts.filter(post=>post.title.toLowerCase().startsWith("s"));
+    console.log(post)
+}
+getUser(apiUrl)
