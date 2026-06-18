@@ -155,27 +155,33 @@
 // Resolves with "Username Valid" if username is not empty.
 // Rejects with "Username Required" otherwise.
 
-let str=prompt("Enter Name");
-let promise=new Promise((resolve,reject)=>
-{
-    if(str!==' ')
-    {
-resolve("Username Valid");
-    }else{
-        reject("Username Required");
-    }
+// let str=prompt("Enter Name");
+// let promise=new Promise((resolve,reject)=>
+// {
+//     if(str!==' ')
+//     {
+// resolve("Username Valid");
+//     }else{
+//         reject("Username Required");
+//     }
 
-});
+// });
 
-promise.then((result)=>{
-console.log(result)
-}).catch((Error)=>
-{
-console.log(Error)
-});
+// promise.then((result)=>{
+// console.log(result)
+// }).catch((Error)=>
+// {
+// console.log(Error)
+// });
 
 //?8
 // Create a Promise that:
 // Resolves with "Array Has Elements" if array is not empty.
 // Rejects with "Array is Empty" otherwise.
 
+
+let promise=new Promise((resolve,reject)=>
+{
+    let arr=[];
+
+});

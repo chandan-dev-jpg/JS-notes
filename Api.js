@@ -72,8 +72,8 @@
 
 // getUser(apiUrl);
 
-// async It allows a task to run in the background without stopping the rest of the program.
-// await is used to wait for a Promise to finish before moving to the next line.
+// !async It allows a task to run in the background without stopping the rest of the program.
+// !await is used to wait for a Promise to finish before moving to the next line.
 
 //? 6
 // let apiUrl="https://jsonplaceholder.typicode.com/todos";
@@ -147,14 +147,74 @@
 
 
 //?11
-let apiUrl="https://jsonplaceholder.typicode.com/posts";
+// let apiUrl="https://jsonplaceholder.typicode.com/posts";
 
-async function getUser(api)
-{
-    let response=await fetch(api);
-    let posts=await response.json();
+// async function getUser(api)
+// {
+//     let response=await fetch(api);
+//     let posts=await response.json();
 
-    let post=posts.filter(post=>post.title.toLowerCase().startsWith("s"));
-    console.log(post)
-}
-getUser(apiUrl)
+//     let post=posts.filter(post=>post.title.toLowerCase().startsWith("s"));
+//     console.log(post)
+// }
+// getUser(apiUrl)
+
+//?12
+
+// let apiUrl="https://jsonplaceholder.typicode.com/users";
+
+// async function getUser(api)
+// {
+// let response=await fetch(api);
+// let users=await response.json();
+
+// let emails=users.filter(user=>user.email.includes("blz"));
+// console.log(emails);
+// }
+// getUser(apiUrl);
+
+//?13
+
+// let apiUrl="https://jsonplaceholder.typicode.com/comments";
+
+// async function getUser(api) {
+//     let response=await fetch(api);
+//     let comments=await response.json();
+
+//     let comment=comments.slice(0,10);
+//     console.log(comment);
+    
+// }
+// getUser(apiUrl);
+
+//?14
+
+// let apiUrl="https://jsonplaceholder.typicode.com/todos";
+
+// async function getUser(api)
+// {
+// let response=await fetch(api);
+// let Users=await response.json();
+
+// let titles=Users.filter(todo=>todo.title.toLowerCase().includes("est"));
+// console.log(titles);
+
+// }
+
+// getUser(apiUrl);
+
+
+//?15 
+
+// let apiUrl="https://jsonplaceholder.typicode.com/photos";
+
+// async function getUser(api)
+// {
+//     let response=await fetch(api);
+//     let Users=await response.json();
+
+//     let Photos=Users.slice(-7);
+//     console.log(Photos)
+
+// }
+// getUser(apiUrl);
